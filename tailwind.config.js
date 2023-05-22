@@ -2,7 +2,7 @@
 module.exports = {
   content: [
     "./src/**/*.{html,ts}",
-    "./projects/zanobi-tailwind/src/**/*.{html,ts}",
+    "./projects/ui-zanobi/src/**/*.{html,ts}",
   ],
   darkMode: "class",
   theme: {
