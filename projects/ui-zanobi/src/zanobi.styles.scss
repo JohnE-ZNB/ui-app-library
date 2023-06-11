@@ -1,143 +1,16 @@
+@layer base {
+  html {
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
 @layer components {
-  // START BUTTON CSS - BASE
-  .btn {
-    @apply w-[50px] h-11 relative overflow-hidden box-border flex items-center justify-center rounded-md text-primary;
-  }
 
-  .btn-primary {
-    @extend .btn;
-    @apply text-primary active:bg-primary-container active:transform;
+  // Design System
+  h1 {
+    @apply font-bold text-lg my-2 text-surface-variant dark:text-surface
   }
-
-  .btn-secondary {
-    @extend .btn;
-    @apply text-secondary active:bg-secondary-container;
+  h2 {
+    @apply font-bold text-base my-2 text-surface-variant dark:text-surface
   }
-
-  .btn-success {
-    @extend .btn;
-    @apply text-success active:bg-success-container;
-  }
-
-  .btn-warning {
-    @extend .btn;
-    @apply text-warning active:bg-warning-container;
-  }
-
-  .btn-danger {
-    @extend .btn;
-    @apply text-danger active:bg-danger-container;
-  }
-
-  .btn-info {
-    @extend .btn;
-    @apply text-info active:bg-info-container;
-  }
-  // END BUTTON CSS -BASE
-  // ===========================================================
-  // START BUTTON CSS - OUTLINE
-  .btn-outline {
-    @apply border-2;
-  }
-
-  .btn-outline-primary {
-    @extend .btn;
-    @extend .btn-outline;
-    @apply border-primary text-primary hover:bg-primary-container active:bg-primary-container;
-  }
-
-  .btn-outline-secondary {
-    @extend .btn;
-    @extend .btn-outline;
-    @apply border-secondary text-secondary hover:bg-secondary-container active:bg-secondary-container;
-  }
-
-  .btn-outline-success {
-    @extend .btn;
-    @extend .btn-outline;
-    @apply border-success text-success hover:bg-success-container active:bg-success-container;
-  }
-
-  .btn-outline-warning {
-    @extend .btn;
-    @extend .btn-outline;
-    @apply border-warning text-warning hover:bg-warning-container active:bg-warning-container;
-  }
-
-  .btn-outline-danger {
-    @extend .btn;
-    @extend .btn-outline;
-    @apply border-danger text-danger hover:bg-danger-container active:bg-danger-container;
-  }
-
-  .btn-outline-info {
-    @extend .btn;
-    @extend .btn-outline;
-    @apply border-info text-info hover:bg-info-container active:bg-info-container;
-  }
-
-  // END BUTTON CSS -OULINE
-  // ===========================================================
-  // START BUTTON CSS - FILL
-  .btn-fill {
-    @apply border-0;
-  }
-
-  .btn-fill-primary {
-    @extend .btn;
-    @extend .btn-fill;
-    @apply bg-primary text-primary-on hover:bg-primary-tint active:bg-primary-shade;
-  }
-
-  .btn-fill-secondary {
-    @extend .btn;
-    @extend .btn-fill;
-    @apply bg-secondary text-secondary-on hover:bg-secondary-tint active:bg-secondary-shade;
-  }
-
-  .btn-fill-success {
-    @extend .btn;
-    @extend .btn-fill;
-    @apply bg-success text-success-on hover:bg-success-tint active:bg-success-shade;
-  }
-
-  .btn-fill-warning {
-    @extend .btn;
-    @extend .btn-fill;
-    @apply bg-warning text-warning-on hover:bg-warning-tint active:bg-warning-shade;
-  }
-
-  .btn-fill-danger {
-    @extend .btn;
-    @extend .btn-fill;
-    @apply bg-danger text-danger-on hover:bg-danger-tint active:bg-danger-shade;
-  }
-
-  .btn-fill-info {
-    @extend .btn;
-    @extend .btn-fill;
-    @apply bg-info text-info-on hover:bg-info-tint active:bg-info-shade active:text-info-container;
-  }
-
-  // END BUTTON CSS -FILL
-  // ===========================================================
-  // START BUTTON CSS - RAISED
-  .btn-raised {
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1),
-    0px 1px 4px rgba(0, 0, 0, 0.2);
-  }
-
-  // END BUTTON CSS -RAISED
-  // ===========================================================
-  // START BUTTON CSS - ROUND
-  .btn-round {
-    @apply rounded-2xl;
-  }
-
-  .btn-round-pill {
-    @apply rounded-full;
-  }
-
-  // END BUTTON CSS -RAISED
-  // ===========================================================
 }
