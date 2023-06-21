@@ -1,12 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./src/**/*.{html,ts}",
-    "./projects/zanobi-tailwind/src/**/*.{html,ts}",
-  ],
+  content: ["./src/**/*.{html,ts}", "./projects/ui-zanobi/src/**/*.{html,ts}"],
   darkMode: "class",
   theme: {
     extend: {
+      fontFamily: {
+        roboto: ["roboto"],
+      },
       colors: {
         primary: "#0934f8",
         "primary-on": "#fff",
@@ -44,6 +44,20 @@ module.exports = {
         "surface-variant": "#0f172a",
         "surface-variant-bright": "#475569",
         "surface-variant-container": "#020617",
+      },
+      animation: {
+        "jello-horizontal": "jello-horizontal 0.9s both",
+      },
+      keyframes: {
+        "jello-horizontal": {
+          "0%": { transform: "scale3d(1, 1, 1)" },
+          "30%": { transform: "scale3d(1.1, 0.75, 1)" },
+          "40%": { transform: "scale3d(0.75, 1.25, 1)" },
+          "50%": { transform: "scale3d(1.1, 0.85, 1)" },
+          "65%": { transform: "scale3d(0.95, 1.05, 1)" },
+          "75%": { transform: "scale3d(1.05, 0.95, 1)" },
+          "100%": { transform: "scale3d(1, 1, 1)" },
+        },
       },
     },
   },

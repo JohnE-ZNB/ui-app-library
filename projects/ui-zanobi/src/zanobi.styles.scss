@@ -1,0 +1,78 @@
+@layer base {
+  html {
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+@layer components {
+
+  // Design System
+
+
+  .znb-text-display{
+    &-lg{
+      @apply font-roboto font-normal text-[57px] leading-[64px] tracking-[-0.25px]
+    }
+    &-md {
+      @apply font-roboto font-normal text-[45px] leading-[52px] tracking-normal
+    }
+    &-sm {
+      @apply font-roboto font-normal text-[36px] leading-[44px] tracking-normal
+    }
+  }
+
+  .znb-text-headline {
+    &-lg {
+      @apply font-roboto font-normal text-[32px] leading-[40px] tracking-normal
+    }
+
+    &-md {
+      @apply font-roboto font-normal text-[28px] leading-[36px] tracking-normal
+    }
+
+    &-sm {
+      @apply font-roboto font-normal text-[24px] leading-[32px] tracking-normal
+    }
+  }
+  .znb-text-title {
+    &-lg {
+      @apply font-roboto font-normal text-[22px] leading-[28px] tracking-normal
+    }
+
+    &-md {
+      @apply font-roboto font-medium text-[16px] leading-[24px] tracking-[.15px]
+    }
+
+    &-sm {
+      @apply font-roboto font-medium text-[14px] leading-[20px] tracking-[.1px]
+    }
+  }
+
+  .znb-text-body {
+    &-lg {
+      @apply font-roboto font-normal text-[16px] leading-[24px] tracking-[.5px]
+    }
+
+    &-md {
+      @apply font-roboto font-normal text-[14px] leading-[20px] tracking-[.25px]
+    }
+
+    &-sm {
+      @apply font-roboto font-normal text-[12px] leading-[16px] tracking-[.4px]
+    }
+  }
+
+  .znb-text-label {
+    &-lg {
+      @apply font-roboto font-medium text-[14px] leading-[20px] tracking-[.1px]
+    }
+
+    &-md {
+      @apply font-roboto font-medium text-[12px] leading-[16px] tracking-[.5px]
+    }
+
+    &-sm {
+      @apply font-roboto font-medium text-[11px] leading-[16px] tracking-[.5px]
+    }
+  }
+}

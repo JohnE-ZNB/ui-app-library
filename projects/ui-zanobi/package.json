@@ -2,6 +2,7 @@
   "name": "ui-zanobi",
   "version": "0.0.1",
   "peerDependencies": {
+    "@angular/cdk": "^16.0.0",
     "@angular/common": "^16.0.0",
     "@angular/core": "^16.0.0"
   },

@@ -104,7 +104,7 @@
       "projectType": "library",
       "root": "projects/ui-zanobi",
       "sourceRoot": "projects/ui-zanobi/src",
-      "prefix": "lib",
+      "prefix": "ui",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
