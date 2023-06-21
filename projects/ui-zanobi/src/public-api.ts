@@ -7,4 +7,5 @@
 // export * from './lib/ui-zanobi.module';
 
 
+export * from './lib/znb-button'
 export * from './lib/znb-segmented-button';

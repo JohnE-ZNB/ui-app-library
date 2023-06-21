@@ -5,12 +5,13 @@ import {
   QueryList,
   Renderer2,
   ViewChild,
+  ViewChildren,
 } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ZnbBase } from '../znb-base/znb-base';
+import { ZnbBaseDirective } from '../znb-base/znb-base.directive';
 import { ZnbSegmentedComponent } from '../znb-segmented/znb-segmented.component';
-import { segmentedConfig } from './znb-segmented.properties';
-import { ButtonConfig } from './znb-button.properties';
+import { segmentedClass } from './znb-segmented.classes';
+import { ButtonClass } from '../znb-button/znb-button.classes';
 import { ZnbCompute } from '../znb-base/znb-compute';
 
 @Component({
@@ -19,13 +20,15 @@ import { ZnbCompute } from '../znb-base/znb-compute';
   imports: [CommonModule, ZnbSegmentedComponent],
   templateUrl: './znb-segmented-button.component.html',
 })
-export class ZnbSegmentedButtonComponent extends ZnbBase {
+export class ZnbSegmentedButtonComponent extends ZnbBaseDirective {
   segmentedClass = '';
   buttonClass = '';
 
-  @ViewChild('segmentedButton') segmentedButton: ElementRef;
+  @ViewChild('button') segmentedButton: ElementRef;
+  // @ViewChildren('button') buttons: QueryList<ElementRef>;
   @HostListener('click', ['$event']) onClick(event: MouseEvent) {
     const clickedElement = event.target as HTMLElement;
+    console.log(clickedElement);
     if (clickedElement.nodeName === 'BUTTON') {
       const activeButton =
         clickedElement.parentElement?.querySelector('.active');
@@ -37,27 +40,20 @@ export class ZnbSegmentedButtonComponent extends ZnbBase {
   }
 
   constructor(private renderer: Renderer2, private elementRef: ElementRef) {
-    super();
-    console.log('constructor', this.Props);
-    this.Props['Segmented'] = true;
+    super(elementRef, segmentedClass);
+    this.Segmented = true;
   }
 
   ngAfterContentInit() {
-    const segmentedProps = segmentedConfig(
-      this.Props,
-      this.elementRef.nativeElement.classList.value
-    );
-    this.segmentedClass = ZnbCompute(segmentedProps, this.Props);
-    console.log('this.segmentedClass', this.segmentedClass);
-    console.log('==============================================');
+    this.setupElementPropierties();
+    this.setupElementButtonPropierties();
   }
 
-  ngAfterViewInit() {
+  setupElementButtonPropierties() {
     const buttons: QueryList<HTMLElement> =
-      this.segmentedButton.nativeElement.querySelectorAll('button');
-    console.log('buttons', buttons);
+      this.elementRef.nativeElement.querySelectorAll('button');
     buttons.forEach((button) => {
-      const buttonProps = ButtonConfig(this.Props, button.classList.value);
+      const buttonProps = ButtonClass(this.Props, button.classList.value);
       const classes = ZnbCompute(buttonProps, this.Props);
       this.renderer.setAttribute(button, 'class', classes);
     });

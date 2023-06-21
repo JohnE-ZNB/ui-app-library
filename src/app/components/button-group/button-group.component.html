@@ -1,146 +1,191 @@
-<div class="p-4">
-  <h1>Outline</h1>
-  <h2>Pill or Rounded </h2>
-  <div class=" w-full flex flex-wrap">
-    <ui-znb-segmented-button class="flex-1 mr-2 mb-2" Outline Pill>
-      <button>Button 1</button>
-      <button>Button 2</button>
-      <button>Button 3</button>
-      <button class="active">Active</button>
+<div class="overflow-hidden bg-surface dark:bg-surface-variant">
+  <h1 class="znb-text-title-lg ml-4 mb-2 mt-4">Outline</h1>
+  <h2 class="znb-text-title-md ml-4">Pill or Rounded </h2>
+  <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 mb-4 p-4 bg-surface-bright  dark:bg-surface-variant-container">
+    <ui-znb-segmented-button class="mr-2" Outline Pill>
+      <button>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="m889.63-559.109-24.434-53.347-53.587-24.914 53.572-24.688 24.449-53.572 24.869 53.631 53.392 24.629-53.392 24.869-24.869 53.392Zm-127-180.5-37.152-79.5-79.739-37.391 79.739-37.391 37.152-79.501 37.631 79.501 79.5 37.391-79.44 37.451-37.691 79.44ZM354.38-68.999q-34.825 0-58.929-24.696-24.103-24.696-24.103-60.609h166.543q0 35.913-24.293 60.609Q389.304-69 354.38-69ZM190.826-217.74v-62.87h327.348v62.87H190.826Zm5-125.304Q128.152-387 88.336-453.005 48.523-519.01 48.523-602.021q0-124.332 90.723-215.156Q229.968-908 354.43-908q124.461 0 215.255 90.823 90.793 90.824 90.793 215.155 0 82.913-39.315 148.968Q581.848-387 513.174-343.043H195.826Zm24.63-68.131H489.71q47.355-31.761 74.996-82.044 27.642-50.282 27.642-108.751 0-98.096-69.903-167.879-69.902-69.782-168.065-69.782t-167.826 69.782q-69.663 69.783-69.663 167.879 0 58.469 27.527 108.78t76.038 82.015Zm134.044 0Z"/></svg>
+        Button 1
+      </button>
+      <button>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="m889.63-559.109-24.434-53.347-53.587-24.914 53.572-24.688 24.449-53.572 24.869 53.631 53.392 24.629-53.392 24.869-24.869 53.392Zm-127-180.5-37.152-79.5-79.739-37.391 79.739-37.391 37.152-79.501 37.631 79.501 79.5 37.391-79.44 37.451-37.691 79.44ZM354.38-68.999q-34.825 0-58.929-24.696-24.103-24.696-24.103-60.609h166.543q0 35.913-24.293 60.609Q389.304-69 354.38-69ZM190.826-217.74v-62.87h327.348v62.87H190.826Zm5-125.304Q128.152-387 88.336-453.005 48.523-519.01 48.523-602.021q0-124.332 90.723-215.156Q229.968-908 354.43-908q124.461 0 215.255 90.823 90.793 90.824 90.793 215.155 0 82.913-39.315 148.968Q581.848-387 513.174-343.043H195.826Zm24.63-68.131H489.71q47.355-31.761 74.996-82.044 27.642-50.282 27.642-108.751 0-98.096-69.903-167.879-69.902-69.782-168.065-69.782t-167.826 69.782q-69.663 69.783-69.663 167.879 0 58.469 27.527 108.78t76.038 82.015Zm134.044 0Z"/></svg>
+        Button 2
+      </button>
+      <button>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="m889.63-559.109-24.434-53.347-53.587-24.914 53.572-24.688 24.449-53.572 24.869 53.631 53.392 24.629-53.392 24.869-24.869 53.392Zm-127-180.5-37.152-79.5-79.739-37.391 79.739-37.391 37.152-79.501 37.631 79.501 79.5 37.391-79.44 37.451-37.691 79.44ZM354.38-68.999q-34.825 0-58.929-24.696-24.103-24.696-24.103-60.609h166.543q0 35.913-24.293 60.609Q389.304-69 354.38-69ZM190.826-217.74v-62.87h327.348v62.87H190.826Zm5-125.304Q128.152-387 88.336-453.005 48.523-519.01 48.523-602.021q0-124.332 90.723-215.156Q229.968-908 354.43-908q124.461 0 215.255 90.823 90.793 90.824 90.793 215.155 0 82.913-39.315 148.968Q581.848-387 513.174-343.043H195.826Zm24.63-68.131H489.71q47.355-31.761 74.996-82.044 27.642-50.282 27.642-108.751 0-98.096-69.903-167.879-69.902-69.782-168.065-69.782t-167.826 69.782q-69.663 69.783-69.663 167.879 0 58.469 27.527 108.78t76.038 82.015Zm134.044 0Z"/></svg>
+        Button 3
+      </button>
+      <button class="active">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="m889.63-559.109-24.434-53.347-53.587-24.914 53.572-24.688 24.449-53.572 24.869 53.631 53.392 24.629-53.392 24.869-24.869 53.392Zm-127-180.5-37.152-79.5-79.739-37.391 79.739-37.391 37.152-79.501 37.631 79.501 79.5 37.391-79.44 37.451-37.691 79.44ZM354.38-68.999q-34.825 0-58.929-24.696-24.103-24.696-24.103-60.609h166.543q0 35.913-24.293 60.609Q389.304-69 354.38-69ZM190.826-217.74v-62.87h327.348v62.87H190.826Zm5-125.304Q128.152-387 88.336-453.005 48.523-519.01 48.523-602.021q0-124.332 90.723-215.156Q229.968-908 354.43-908q124.461 0 215.255 90.823 90.793 90.824 90.793 215.155 0 82.913-39.315 148.968Q581.848-387 513.174-343.043H195.826Zm24.63-68.131H489.71q47.355-31.761 74.996-82.044 27.642-50.282 27.642-108.751 0-98.096-69.903-167.879-69.902-69.782-168.065-69.782t-167.826 69.782q-69.663 69.783-69.663 167.879 0 58.469 27.527 108.78t76.038 82.015Zm134.044 0Z"/></svg>
+        Active
+      </button>
     </ui-znb-segmented-button>
-    <ui-znb-segmented-button class="flex-1 mr-2 mb-2" Outline Rounded>
-      <button>Button 1</button>
-      <button>Button 2</button>
-      <button>Button 3</button>
-      <button class="active">Active</button>
-    </ui-znb-segmented-button>
-  </div>
-  <h2>Raised</h2>
-  <div class=" w-full flex flex-wrap">
-    <ui-znb-segmented-button class="flex-1 mr-2 mb-2" Outline Pill Raised>
-      <button>Button 1</button>
-      <button>Button 2</button>
-      <button>Button 3</button>
-      <button class="active">Active</button>
-    </ui-znb-segmented-button>
-    <ui-znb-segmented-button class="flex-1 mr-2 mb-2" Outline Rounded Raised>
+    <ui-znb-segmented-button class="mr-2" Outline Rounded>
       <button>Button 1</button>
       <button>Button 2</button>
       <button>Button 3</button>
       <button class="active">Active</button>
     </ui-znb-segmented-button>
   </div>
-  <h1>Fill</h1>
-  <h2>Pill or Rounded </h2>
-  <div class=" w-full flex flex-wrap">
-    <ui-znb-segmented-button class="flex-1 mr-2 mb-2" Fill Pill>
+  <h2 class="znb-text-title-md ml-4">Raised</h2>
+  <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 mb-4 p-4 bg-surface-bright  dark:bg-surface-variant-container">
+    <ui-znb-segmented-button class="mr-2" Outline Pill Raised>
       <button>Button 1</button>
       <button>Button 2</button>
       <button>Button 3</button>
       <button class="active">Active</button>
     </ui-znb-segmented-button>
-    <ui-znb-segmented-button class="flex-1 mr-2 mb-2" Fill Rounded>
+    <ui-znb-segmented-button class="mr-2" Outline Rounded Raised>
+      <button>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="m889.63-559.109-24.434-53.347-53.587-24.914 53.572-24.688 24.449-53.572 24.869 53.631 53.392 24.629-53.392 24.869-24.869 53.392Zm-127-180.5-37.152-79.5-79.739-37.391 79.739-37.391 37.152-79.501 37.631 79.501 79.5 37.391-79.44 37.451-37.691 79.44ZM354.38-68.999q-34.825 0-58.929-24.696-24.103-24.696-24.103-60.609h166.543q0 35.913-24.293 60.609Q389.304-69 354.38-69ZM190.826-217.74v-62.87h327.348v62.87H190.826Zm5-125.304Q128.152-387 88.336-453.005 48.523-519.01 48.523-602.021q0-124.332 90.723-215.156Q229.968-908 354.43-908q124.461 0 215.255 90.823 90.793 90.824 90.793 215.155 0 82.913-39.315 148.968Q581.848-387 513.174-343.043H195.826Zm24.63-68.131H489.71q47.355-31.761 74.996-82.044 27.642-50.282 27.642-108.751 0-98.096-69.903-167.879-69.902-69.782-168.065-69.782t-167.826 69.782q-69.663 69.783-69.663 167.879 0 58.469 27.527 108.78t76.038 82.015Zm134.044 0Z"/></svg>
+        Button 1
+      </button>
+      <button>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="m889.63-559.109-24.434-53.347-53.587-24.914 53.572-24.688 24.449-53.572 24.869 53.631 53.392 24.629-53.392 24.869-24.869 53.392Zm-127-180.5-37.152-79.5-79.739-37.391 79.739-37.391 37.152-79.501 37.631 79.501 79.5 37.391-79.44 37.451-37.691 79.44ZM354.38-68.999q-34.825 0-58.929-24.696-24.103-24.696-24.103-60.609h166.543q0 35.913-24.293 60.609Q389.304-69 354.38-69ZM190.826-217.74v-62.87h327.348v62.87H190.826Zm5-125.304Q128.152-387 88.336-453.005 48.523-519.01 48.523-602.021q0-124.332 90.723-215.156Q229.968-908 354.43-908q124.461 0 215.255 90.823 90.793 90.824 90.793 215.155 0 82.913-39.315 148.968Q581.848-387 513.174-343.043H195.826Zm24.63-68.131H489.71q47.355-31.761 74.996-82.044 27.642-50.282 27.642-108.751 0-98.096-69.903-167.879-69.902-69.782-168.065-69.782t-167.826 69.782q-69.663 69.783-69.663 167.879 0 58.469 27.527 108.78t76.038 82.015Zm134.044 0Z"/></svg>
+        Button 2
+      </button>
+      <button>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="m889.63-559.109-24.434-53.347-53.587-24.914 53.572-24.688 24.449-53.572 24.869 53.631 53.392 24.629-53.392 24.869-24.869 53.392Zm-127-180.5-37.152-79.5-79.739-37.391 79.739-37.391 37.152-79.501 37.631 79.501 79.5 37.391-79.44 37.451-37.691 79.44ZM354.38-68.999q-34.825 0-58.929-24.696-24.103-24.696-24.103-60.609h166.543q0 35.913-24.293 60.609Q389.304-69 354.38-69ZM190.826-217.74v-62.87h327.348v62.87H190.826Zm5-125.304Q128.152-387 88.336-453.005 48.523-519.01 48.523-602.021q0-124.332 90.723-215.156Q229.968-908 354.43-908q124.461 0 215.255 90.823 90.793 90.824 90.793 215.155 0 82.913-39.315 148.968Q581.848-387 513.174-343.043H195.826Zm24.63-68.131H489.71q47.355-31.761 74.996-82.044 27.642-50.282 27.642-108.751 0-98.096-69.903-167.879-69.902-69.782-168.065-69.782t-167.826 69.782q-69.663 69.783-69.663 167.879 0 58.469 27.527 108.78t76.038 82.015Zm134.044 0Z"/></svg>
+        Button 3
+      </button>
+      <button class="active">Active</button>
+    </ui-znb-segmented-button>
+  </div>
+  <h1 class="znb-text-title-lg ml-4 mb-2 mt-4">Fill</h1>
+  <h2 class="znb-text-title-md ml-4">Pill or Rounded </h2>
+  <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 mb-4 p-4 bg-surface-bright  dark:bg-surface-variant-container">
+    <ui-znb-segmented-button class="mr-2" Fill Pill>
+      <button>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="m889.63-559.109-24.434-53.347-53.587-24.914 53.572-24.688 24.449-53.572 24.869 53.631 53.392 24.629-53.392 24.869-24.869 53.392Zm-127-180.5-37.152-79.5-79.739-37.391 79.739-37.391 37.152-79.501 37.631 79.501 79.5 37.391-79.44 37.451-37.691 79.44ZM354.38-68.999q-34.825 0-58.929-24.696-24.103-24.696-24.103-60.609h166.543q0 35.913-24.293 60.609Q389.304-69 354.38-69ZM190.826-217.74v-62.87h327.348v62.87H190.826Zm5-125.304Q128.152-387 88.336-453.005 48.523-519.01 48.523-602.021q0-124.332 90.723-215.156Q229.968-908 354.43-908q124.461 0 215.255 90.823 90.793 90.824 90.793 215.155 0 82.913-39.315 148.968Q581.848-387 513.174-343.043H195.826Zm24.63-68.131H489.71q47.355-31.761 74.996-82.044 27.642-50.282 27.642-108.751 0-98.096-69.903-167.879-69.902-69.782-168.065-69.782t-167.826 69.782q-69.663 69.783-69.663 167.879 0 58.469 27.527 108.78t76.038 82.015Zm134.044 0Z"/></svg>
+        Button 1
+      </button>
+      <button>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="m889.63-559.109-24.434-53.347-53.587-24.914 53.572-24.688 24.449-53.572 24.869 53.631 53.392 24.629-53.392 24.869-24.869 53.392Zm-127-180.5-37.152-79.5-79.739-37.391 79.739-37.391 37.152-79.501 37.631 79.501 79.5 37.391-79.44 37.451-37.691 79.44ZM354.38-68.999q-34.825 0-58.929-24.696-24.103-24.696-24.103-60.609h166.543q0 35.913-24.293 60.609Q389.304-69 354.38-69ZM190.826-217.74v-62.87h327.348v62.87H190.826Zm5-125.304Q128.152-387 88.336-453.005 48.523-519.01 48.523-602.021q0-124.332 90.723-215.156Q229.968-908 354.43-908q124.461 0 215.255 90.823 90.793 90.824 90.793 215.155 0 82.913-39.315 148.968Q581.848-387 513.174-343.043H195.826Zm24.63-68.131H489.71q47.355-31.761 74.996-82.044 27.642-50.282 27.642-108.751 0-98.096-69.903-167.879-69.902-69.782-168.065-69.782t-167.826 69.782q-69.663 69.783-69.663 167.879 0 58.469 27.527 108.78t76.038 82.015Zm134.044 0Z"/></svg>
+        Button 2
+      </button>
+      <button>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="m889.63-559.109-24.434-53.347-53.587-24.914 53.572-24.688 24.449-53.572 24.869 53.631 53.392 24.629-53.392 24.869-24.869 53.392Zm-127-180.5-37.152-79.5-79.739-37.391 79.739-37.391 37.152-79.501 37.631 79.501 79.5 37.391-79.44 37.451-37.691 79.44ZM354.38-68.999q-34.825 0-58.929-24.696-24.103-24.696-24.103-60.609h166.543q0 35.913-24.293 60.609Q389.304-69 354.38-69ZM190.826-217.74v-62.87h327.348v62.87H190.826Zm5-125.304Q128.152-387 88.336-453.005 48.523-519.01 48.523-602.021q0-124.332 90.723-215.156Q229.968-908 354.43-908q124.461 0 215.255 90.823 90.793 90.824 90.793 215.155 0 82.913-39.315 148.968Q581.848-387 513.174-343.043H195.826Zm24.63-68.131H489.71q47.355-31.761 74.996-82.044 27.642-50.282 27.642-108.751 0-98.096-69.903-167.879-69.902-69.782-168.065-69.782t-167.826 69.782q-69.663 69.783-69.663 167.879 0 58.469 27.527 108.78t76.038 82.015Zm134.044 0Z"/></svg>
+        Button 3
+      </button>
+      <button class="active">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="m889.63-559.109-24.434-53.347-53.587-24.914 53.572-24.688 24.449-53.572 24.869 53.631 53.392 24.629-53.392 24.869-24.869 53.392Zm-127-180.5-37.152-79.5-79.739-37.391 79.739-37.391 37.152-79.501 37.631 79.501 79.5 37.391-79.44 37.451-37.691 79.44ZM354.38-68.999q-34.825 0-58.929-24.696-24.103-24.696-24.103-60.609h166.543q0 35.913-24.293 60.609Q389.304-69 354.38-69ZM190.826-217.74v-62.87h327.348v62.87H190.826Zm5-125.304Q128.152-387 88.336-453.005 48.523-519.01 48.523-602.021q0-124.332 90.723-215.156Q229.968-908 354.43-908q124.461 0 215.255 90.823 90.793 90.824 90.793 215.155 0 82.913-39.315 148.968Q581.848-387 513.174-343.043H195.826Zm24.63-68.131H489.71q47.355-31.761 74.996-82.044 27.642-50.282 27.642-108.751 0-98.096-69.903-167.879-69.902-69.782-168.065-69.782t-167.826 69.782q-69.663 69.783-69.663 167.879 0 58.469 27.527 108.78t76.038 82.015Zm134.044 0Z"/></svg>
+        Active
+      </button>
+    </ui-znb-segmented-button>
+    <ui-znb-segmented-button class="mr-2" Fill Rounded>
       <button>Button 1</button>
       <button>Button 2</button>
       <button>Button 3</button>
       <button class="active">Active</button>
     </ui-znb-segmented-button>
   </div>
-  <h2>Raised</h2>
-  <div class=" w-full flex flex-wrap">
-    <ui-znb-segmented-button class="flex-1 mr-2 mb-2" Fill Pill Raised>
+  <h2 class="znb-text-title-md ml-4">Raised</h2>
+  <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 mb-4 p-4 bg-surface-bright  dark:bg-surface-variant-container">
+    <ui-znb-segmented-button class="mr-2" Fill Pill Raised>
       <button>Button 1</button>
       <button>Button 2</button>
       <button>Button 3</button>
       <button class="active">Active</button>
     </ui-znb-segmented-button>
-    <ui-znb-segmented-button class="flex-1 mr-2 mb-2" Fill Rounded Raised>
-      <button>Button 1</button>
-      <button>Button 2</button>
-      <button>Button 3</button>
-      <button class="active">Active</button>
+    <ui-znb-segmented-button class="mr-2" Fill Rounded Raised>
+      <button>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="m889.63-559.109-24.434-53.347-53.587-24.914 53.572-24.688 24.449-53.572 24.869 53.631 53.392 24.629-53.392 24.869-24.869 53.392Zm-127-180.5-37.152-79.5-79.739-37.391 79.739-37.391 37.152-79.501 37.631 79.501 79.5 37.391-79.44 37.451-37.691 79.44ZM354.38-68.999q-34.825 0-58.929-24.696-24.103-24.696-24.103-60.609h166.543q0 35.913-24.293 60.609Q389.304-69 354.38-69ZM190.826-217.74v-62.87h327.348v62.87H190.826Zm5-125.304Q128.152-387 88.336-453.005 48.523-519.01 48.523-602.021q0-124.332 90.723-215.156Q229.968-908 354.43-908q124.461 0 215.255 90.823 90.793 90.824 90.793 215.155 0 82.913-39.315 148.968Q581.848-387 513.174-343.043H195.826Zm24.63-68.131H489.71q47.355-31.761 74.996-82.044 27.642-50.282 27.642-108.751 0-98.096-69.903-167.879-69.902-69.782-168.065-69.782t-167.826 69.782q-69.663 69.783-69.663 167.879 0 58.469 27.527 108.78t76.038 82.015Zm134.044 0Z"/></svg>
+        Button 1
+      </button>
+      <button>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="m889.63-559.109-24.434-53.347-53.587-24.914 53.572-24.688 24.449-53.572 24.869 53.631 53.392 24.629-53.392 24.869-24.869 53.392Zm-127-180.5-37.152-79.5-79.739-37.391 79.739-37.391 37.152-79.501 37.631 79.501 79.5 37.391-79.44 37.451-37.691 79.44ZM354.38-68.999q-34.825 0-58.929-24.696-24.103-24.696-24.103-60.609h166.543q0 35.913-24.293 60.609Q389.304-69 354.38-69ZM190.826-217.74v-62.87h327.348v62.87H190.826Zm5-125.304Q128.152-387 88.336-453.005 48.523-519.01 48.523-602.021q0-124.332 90.723-215.156Q229.968-908 354.43-908q124.461 0 215.255 90.823 90.793 90.824 90.793 215.155 0 82.913-39.315 148.968Q581.848-387 513.174-343.043H195.826Zm24.63-68.131H489.71q47.355-31.761 74.996-82.044 27.642-50.282 27.642-108.751 0-98.096-69.903-167.879-69.902-69.782-168.065-69.782t-167.826 69.782q-69.663 69.783-69.663 167.879 0 58.469 27.527 108.78t76.038 82.015Zm134.044 0Z"/></svg>
+        Button 2
+      </button>
+      <button>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="m889.63-559.109-24.434-53.347-53.587-24.914 53.572-24.688 24.449-53.572 24.869 53.631 53.392 24.629-53.392 24.869-24.869 53.392Zm-127-180.5-37.152-79.5-79.739-37.391 79.739-37.391 37.152-79.501 37.631 79.501 79.5 37.391-79.44 37.451-37.691 79.44ZM354.38-68.999q-34.825 0-58.929-24.696-24.103-24.696-24.103-60.609h166.543q0 35.913-24.293 60.609Q389.304-69 354.38-69ZM190.826-217.74v-62.87h327.348v62.87H190.826Zm5-125.304Q128.152-387 88.336-453.005 48.523-519.01 48.523-602.021q0-124.332 90.723-215.156Q229.968-908 354.43-908q124.461 0 215.255 90.823 90.793 90.824 90.793 215.155 0 82.913-39.315 148.968Q581.848-387 513.174-343.043H195.826Zm24.63-68.131H489.71q47.355-31.761 74.996-82.044 27.642-50.282 27.642-108.751 0-98.096-69.903-167.879-69.902-69.782-168.065-69.782t-167.826 69.782q-69.663 69.783-69.663 167.879 0 58.469 27.527 108.78t76.038 82.015Zm134.044 0Z"/></svg>
+        Button 3
+      </button>
+      <button class="active">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="m889.63-559.109-24.434-53.347-53.587-24.914 53.572-24.688 24.449-53.572 24.869 53.631 53.392 24.629-53.392 24.869-24.869 53.392Zm-127-180.5-37.152-79.5-79.739-37.391 79.739-37.391 37.152-79.501 37.631 79.501 79.5 37.391-79.44 37.451-37.691 79.44ZM354.38-68.999q-34.825 0-58.929-24.696-24.103-24.696-24.103-60.609h166.543q0 35.913-24.293 60.609Q389.304-69 354.38-69ZM190.826-217.74v-62.87h327.348v62.87H190.826Zm5-125.304Q128.152-387 88.336-453.005 48.523-519.01 48.523-602.021q0-124.332 90.723-215.156Q229.968-908 354.43-908q124.461 0 215.255 90.823 90.793 90.824 90.793 215.155 0 82.913-39.315 148.968Q581.848-387 513.174-343.043H195.826Zm24.63-68.131H489.71q47.355-31.761 74.996-82.044 27.642-50.282 27.642-108.751 0-98.096-69.903-167.879-69.902-69.782-168.065-69.782t-167.826 69.782q-69.663 69.783-69.663 167.879 0 58.469 27.527 108.78t76.038 82.015Zm134.044 0Z"/></svg>
+        Active
+      </button>
     </ui-znb-segmented-button>
   </div>
 
-  <h1>Colors</h1>
-  <div class=" w-full flex flex-wrap">
-    <ui-znb-segmented-button class="flex-1 mr-2 mb-2" Outline Pill Raised Primary>
+  <h1 class="znb-text-title-lg ml-4 mb-2 mt-4">Colors</h1>
+  <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 mb-4 p-4 bg-surface-bright  dark:bg-surface-variant-container">
+    <ui-znb-segmented-button class="mr-2" Outline Pill Raised Primary>
       <button>Button 1</button>
       <button>Button 2</button>
       <button>Button 3</button>
       <button class="active">Active</button>
     </ui-znb-segmented-button>
-    <ui-znb-segmented-button class="flex-1 mr-2 mb-2" Outline Pill Raised Secondary>
-      <button>Button 1</button>
-      <button>Button 2</button>
-      <button>Button 3</button>
-      <button class="active">Active</button>
-    </ui-znb-segmented-button>
-  </div>
-  <div class=" w-full flex flex-wrap">
-    <ui-znb-segmented-button class="flex-1 mr-2 mb-2" Outline Pill Raised Success>
-      <button>Button 1</button>
-      <button>Button 2</button>
-      <button>Button 3</button>
-      <button class="active">Active</button>
-    </ui-znb-segmented-button>
-    <ui-znb-segmented-button class="flex-1 mr-2 mb-2" Outline Pill Raised Warning>
+    <ui-znb-segmented-button class="mr-2" Outline Pill Raised Secondary>
       <button>Button 1</button>
       <button>Button 2</button>
       <button>Button 3</button>
       <button class="active">Active</button>
     </ui-znb-segmented-button>
   </div>
-  <div class=" w-full flex flex-wrap">
-    <ui-znb-segmented-button class="flex-1 mr-2 mb-2" Outline Pill Raised Danger>
+  <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 mb-4 p-4 bg-surface-bright  dark:bg-surface-variant-container">
+    <ui-znb-segmented-button class="mr-2" Outline Pill Raised Success>
       <button>Button 1</button>
       <button>Button 2</button>
       <button>Button 3</button>
       <button class="active">Active</button>
     </ui-znb-segmented-button>
-    <ui-znb-segmented-button class="flex-1 mr-2 mb-2" Outline Pill Raised Info>
-      <button>Button 1</button>
-      <button>Button 2</button>
-      <button>Button 3</button>
-      <button class="active">Active</button>
-    </ui-znb-segmented-button>
-  </div>
-  <div class=" w-full flex flex-wrap">
-    <ui-znb-segmented-button class="flex-1 mr-2 mb-2" Fill Pill Raised Primary>
-      <button>Button 1</button>
-      <button>Button 2</button>
-      <button>Button 3</button>
-      <button class="active">Active</button>
-    </ui-znb-segmented-button>
-    <ui-znb-segmented-button class="flex-1 mr-2 mb-2" Fill Pill Raised Secondary>
+    <ui-znb-segmented-button class="mr-2" Outline Pill Raised Warning>
       <button>Button 1</button>
       <button>Button 2</button>
       <button>Button 3</button>
       <button class="active">Active</button>
     </ui-znb-segmented-button>
   </div>
-  <div class=" w-full flex flex-wrap">
-    <ui-znb-segmented-button class="flex-1 mr-2 mb-2" Fill Pill Raised Success>
+  <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 mb-4 p-4 bg-surface-bright  dark:bg-surface-variant-container">
+    <ui-znb-segmented-button class="mr-2" Outline Pill Raised Danger>
       <button>Button 1</button>
       <button>Button 2</button>
       <button>Button 3</button>
       <button class="active">Active</button>
     </ui-znb-segmented-button>
-    <ui-znb-segmented-button class="flex-1 mr-2 mb-2" Fill Pill Raised Warning>
+    <ui-znb-segmented-button class="mr-2" Outline Pill Raised Info>
       <button>Button 1</button>
       <button>Button 2</button>
       <button>Button 3</button>
       <button class="active">Active</button>
     </ui-znb-segmented-button>
   </div>
-  <div class=" w-full flex flex-wrap">
-    <ui-znb-segmented-button class="flex-1 mr-2 mb-2" Fill Pill Raised Danger>
+  <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 mb-4 p-4 bg-surface-bright  dark:bg-surface-variant-container">
+    <ui-znb-segmented-button class="mr-2" Fill Pill Raised Primary>
       <button>Button 1</button>
       <button>Button 2</button>
       <button>Button 3</button>
       <button class="active">Active</button>
     </ui-znb-segmented-button>
-    <ui-znb-segmented-button class="flex-1 mr-2 mb-2" Fill Pill Raised Info>
+    <ui-znb-segmented-button class="mr-2" Fill Pill Raised Secondary>
+      <button>Button 1</button>
+      <button>Button 2</button>
+      <button>Button 3</button>
+      <button class="active">Active</button>
+    </ui-znb-segmented-button>
+  </div>
+  <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 mb-4 p-4 bg-surface-bright  dark:bg-surface-variant-container">
+    <ui-znb-segmented-button class="mr-2" Fill Pill Raised Success>
+      <button>Button 1</button>
+      <button>Button 2</button>
+      <button>Button 3</button>
+      <button class="active">Active</button>
+    </ui-znb-segmented-button>
+    <ui-znb-segmented-button class="mr-2" Fill Pill Raised Warning>
+      <button>Button 1</button>
+      <button>Button 2</button>
+      <button>Button 3</button>
+      <button class="active">Active</button>
+    </ui-znb-segmented-button>
+  </div>
+  <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 mb-4 p-4 bg-surface-bright  dark:bg-surface-variant-container">
+    <ui-znb-segmented-button class="mr-2" Fill Pill Raised Danger>
+      <button>Button 1</button>
+      <button>Button 2</button>
+      <button>Button 3</button>
+      <button class="active">Active</button>
+    </ui-znb-segmented-button>
+    <ui-znb-segmented-button class="mr-2" Fill Pill Raised Info>
       <button>Button 1</button>
       <button>Button 2</button>
       <button>Button 3</button>

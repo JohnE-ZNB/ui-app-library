@@ -1,11 +1,11 @@
 export interface IBase {
-  Custom: boolean;
   Vertical: boolean;
   Horizontal: boolean;
   Flat: boolean;
   Fill: boolean;
   Outline: boolean;
-  Round: boolean;
+  Usual: boolean;
+  Rounded: boolean;
   Pill: boolean;
   Raised: boolean;
   Primary: boolean;
@@ -16,5 +16,6 @@ export interface IBase {
   Info: boolean;
   Color: string;
   Variant: string;
-  Segmented?: boolean;
+  Segmented: boolean;
+  Custom?: string;
 }

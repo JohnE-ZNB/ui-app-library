@@ -1,26 +1,24 @@
-import { Component, Input } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { BooleanInput, coerceBooleanProperty } from '@angular/cdk/coercion';
+import { Directive, ElementRef, Inject, Input } from '@angular/core';
+import { coerceBooleanProperty } from '@angular/cdk/coercion';
 import { IBase } from './znb-base.interface';
+import { ZnbCompute } from './znb-compute';
 
-@Component({
-  // selector: 'znb-base',
-  // exportAs: 'znbBase',
+@Directive({
+  selector: 'ui-znb-base, [uiZnbBase]',
+  exportAs: 'znb-base',
   standalone: true,
-  imports: [CommonModule],
-  // template: `<ng-content></ng-content>`,
-  template: ``,
 })
-export class ZnbBase {
-
+export class ZnbBaseDirective {
+  private _element: ElementRef;
+  private _elementConfig: any;
   private _props: IBase = {
-    Custom: false,
     Vertical: false,
     Horizontal: true,
     Flat: false,
     Fill: false,
     Outline: true,
-    Round: true,
+    Usual: false,
+    Rounded: true,
     Pill: false,
     Raised: false,
     Primary: false,
@@ -31,14 +29,23 @@ export class ZnbBase {
     Info: false,
     Color: 'Primary',
     Variant: 'outline',
+    Segmented: false,
   };
 
+  constructor(
+    element: ElementRef<any>,
+    @Inject('ConfigService') private elementConfig: any
+  ) {
+    this._element = element;
+    this._elementConfig = elementConfig;
+  }
+
   @Input()
-  get Custom(): string | boolean {
+  get Custom(): string | undefined {
     return this._props.Custom;
   }
-  set Custom(value: string | boolean) {
-    this._props.Custom = coerceBooleanProperty(value);
+  set Custom(value: string | undefined) {
+    this._props.Custom = value;
   }
 
   @Input()
@@ -79,6 +86,16 @@ export class ZnbBase {
   }
 
   @Input()
+  get Usual(): string | boolean {
+    return this._props.Usual;
+  }
+  set Usual(value: string | boolean) {
+    this._props.Outline = false;
+    this._props.Variant = 'usual';
+    this._props.Usual = coerceBooleanProperty(value);
+  }
+
+  @Input()
   get Outline(): string | boolean {
     return this._props.Outline;
   }
@@ -87,11 +104,11 @@ export class ZnbBase {
   }
 
   @Input()
-  get Round(): string | boolean {
-    return this._props.Round;
+  get Rounded(): string | boolean {
+    return this._props.Rounded;
   }
-  set Round(value: string | boolean) {
-    this._props.Round = coerceBooleanProperty(value);
+  set Rounded(value: string | boolean) {
+    this._props.Rounded = coerceBooleanProperty(value);
   }
 
   @Input()
@@ -99,7 +116,7 @@ export class ZnbBase {
     return this._props.Pill;
   }
   set Pill(value: string | boolean) {
-    this._props.Round = false;
+    this._props.Rounded = false;
     this._props.Pill = coerceBooleanProperty(value);
   }
 
@@ -165,6 +182,14 @@ export class ZnbBase {
     this._props.Info = coerceBooleanProperty(value);
   }
 
+  @Input()
+  get Segmented(): string | boolean {
+    return this._props.Segmented;
+  }
+  set Segmented(value: string | boolean) {
+    this._props.Segmented = coerceBooleanProperty(value);
+  }
+
   get Color(): string {
     return this._props.Color;
   }
@@ -175,5 +200,14 @@ export class ZnbBase {
 
   get Props(): IBase {
     return this._props;
+  }
+
+  setupElementPropierties() {
+    const elementProperties = this._elementConfig(
+      this.Props,
+      this._element.nativeElement.classList.value
+    );
+    const classesToApply = ZnbCompute(elementProperties, this.Props);
+    this._element.nativeElement.classList.value = classesToApply;
   }
 }

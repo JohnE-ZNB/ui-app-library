@@ -4,6 +4,9 @@ module.exports = {
   darkMode: "class",
   theme: {
     extend: {
+      fontFamily: {
+        roboto: ["roboto"],
+      },
       colors: {
         primary: "#0934f8",
         "primary-on": "#fff",
